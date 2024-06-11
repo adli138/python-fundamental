@@ -15,6 +15,7 @@ print("dan mulai berbelanja")
 # Percabangan
 milk_bottle_count = 123012
 eggs_count = 312897
+
 print(f'Jumlah Botol Susu {milk_bottle_count} btl')
 print(f'Jumlah Telur {eggs_count} butir')
 
