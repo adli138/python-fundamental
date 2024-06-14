@@ -49,12 +49,40 @@ daftar_buku.pop()
 for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
 
+print('\nPop -2')
 daftar_buku = ['Rich Dad Poor Dad', 'Crypto Trading Guide', 'Smart Money Concept', 'Pota Bee']
 daftar_buku.append('Indomaret')
-print('\nPop -2')
 daftar_buku.pop(-2)
 for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
+
+print('\nPerintah del')
+daftar_buku = ['Rich Dad Poor Dad', 'Crypto Trading Guide', 'Smart Money Concept', 'Pota Bee']
+del daftar_buku[0]
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nPerintah del dengan list comprehension')
+daftar_buku = ['Rich Dad Poor Dad', 'Crypto Trading Guide', 'Smart Money Concept', 'Pota Bee']
+del daftar_buku[:]
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nPerintah del dengan list comprehension start end')
+daftar_buku = ['Rich Dad Poor Dad', 'Crypto Trading Guide', 'Smart Money Concept', 'Pota Bee']
+del daftar_buku[0:2] #start:end
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nPerintah del dengan list comprehension start end step')
+daftar_buku = ['Rich Dad Poor Dad', 'Crypto Trading Guide', 'Smart Money Concept', 'Pota Bee']
+del daftar_buku[0::2] #start:end:step
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+
+
+
 
 
 
