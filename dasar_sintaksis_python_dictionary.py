@@ -22,3 +22,16 @@ print(users['username'])
 print(users['email'])
 print(users['address']['city'])
 print(users['address']['geo']['lat'])
+
+print(users)
+print(type(users))
+print('\nUbah Dict ke Json')
+
+import json
+
+hasil = json.dumps(users)
+print(type(hasil))
+print(hasil)
+
+with open('hasil json', 'w') as file:
+    json.dump(users, file)
